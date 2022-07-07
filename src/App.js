@@ -1,5 +1,6 @@
 import Header from './Header';
 import Auth from './Auth';
+import List from './List';
 import { useState } from 'react';
 import { client } from './services/client';
 import {
@@ -47,6 +48,14 @@ function App() {
             {
               user
                 ? <Create />
+                : <Redirect to="/" />
+            }
+          </Route>
+          <Route exact path="/list">
+            {
+              user
+                ? <List /> 
+                
                 : <Redirect to="/" />
             }
           </Route>

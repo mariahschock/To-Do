@@ -23,3 +23,8 @@ export async function signIn(email, password) {
 
   return user;
 }
+export async function createList(list) {
+  const { data } = await client.from('To_Do').insert(list).single();
+
+  return data;
+}

@@ -39,12 +39,17 @@ button {
   color: white;
   font-size: 1.25rem;
   font-family:monospace;
+  position: relative;
 }
 a:link {
   text-decoration: none;
   color: white;
   cursor: pointer;
   padding: 10px;
+}
+a:visited {
+  text-decoration: none;
+  color: white;
 }
 .auth {
   display: flex;
@@ -76,4 +81,7 @@ a:link {
 label {
   display: flex;
   flex-direction: column;
+}
+.create {
+  padding-left: 400px;
 }
